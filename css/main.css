@@ -1,0 +1,54 @@
+/* -s- スクロールバー制御 */
+*{
+    overflow-y: scroll;
+        -ms-overflow-style: none;    /* IE, Edge 対応 */
+        scrollbar-width: none;       /* Firefox 対応 */
+}
+
+*::-webkit-scrollbar {
+    display:none;
+}
+/* -e- スクロールバー制御 */
+
+body{
+    background-color: #BAA898;
+    background-image: url('/img/town.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-control{
+    border-color: none;
+    border-width: 0.15rem;
+}
+
+.list-group-item{
+    border-color: #D4C4B2;
+    border-width: 0.17rem;
+    background-color: #EEE0CB;
+}
+
+.list-group-item >a{
+    border-color: #839788;
+    border-width: 0.2rem;
+    background-color: #fff;
+}
+
+.text-Q{
+    color: #337236;
+
+}
+
+.text-No{
+    color: #3895c4;
+
+}
+
+/* -s- フォント(Futura) */
+.ff-ft{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+/* -e- スクロールバー制御 */

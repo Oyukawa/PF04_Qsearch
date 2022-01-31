@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#x1f50dQiita search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div id="app">
+            <div class="mt-5 mb-1 text-center">
+                <p class="display-2 text-light"><em><span class="display-1 fw-bold text-Q">Q</span><span class="display-4 fw-bold">サーチ</span></em></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 pt-1">
+                    <input class="form-control rounded-pill border-0" type="text" v-model="keyword" placeholder="&#x1f50dQiitaで最新記事を検索">
+                    <p class="pt-2 text-center text-light lead">{{ message }}</p>
+                </div>
+                <div class=col-sm-3></div>
+            </div>
+            
+                <ul class="list-group">
+                    <li v-for="(item,count) in items" class="list-group-item">
+                        <a v-bind:href="item.url" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action rounded-pill"><span class="text-No fw-bold">No.{{ count + 1 }}：</span>{{ item.title }}</a>
+                        &#x23f0: {{item.updated_at}}
+                        &#x1f44d: {{ item.likes_count }}
+                    </li>
+                </ul>
+
+                
+            
+        </div>
+    </div>
+
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
