@@ -12,7 +12,7 @@
 
 body{
     background-color: #BAA898;
-    background-image: url('/img/town.svg');
+    background-image: url('../img/town.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

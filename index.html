@@ -16,6 +16,7 @@
             <div class="mt-5 mb-1 text-center">
                 <p class="display-2 text-light"><em><span class="display-1 fw-bold text-Q">Q</span><span class="display-4 fw-bold">サーチ</span></em></p>
             </div>
+
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6 pt-1">
@@ -25,16 +26,13 @@
                 <div class=col-sm-3></div>
             </div>
             
-                <ul class="list-group">
-                    <li v-for="(item,count) in items" class="list-group-item">
-                        <a v-bind:href="item.url" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action rounded-pill"><span class="text-No fw-bold">No.{{ count + 1 }}：</span>{{ item.title }}</a>
-                        &#x23f0: {{item.updated_at}}
-                        &#x1f44d: {{ item.likes_count }}
-                    </li>
-                </ul>
-
-                
-            
+            <ul class="list-group">
+                <li v-for="(item,count) in items" class="list-group-item">
+                    <a v-bind:href="item.url" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action rounded-pill"><span class="text-No fw-bold">No.{{ count + 1 }}：</span>{{ item.title }}</a>
+                     &#x23f0: {{item.updated_at}}
+                    &#x1f44d: {{ item.likes_count }}
+                </li>
+            </ul>           
         </div>
     </div>
 
